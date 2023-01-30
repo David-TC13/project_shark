@@ -34,3 +34,5 @@ We can determine that there's a bigger amount of shark attacks during the summer
 We noticed as well, a bigger amount of attacks happens in the North hemisphere than the South, which contradicts the traditional view.
 
 Eventhough, our Hypothesis confirms the fact that sharks attacks occured more during the summer season, we can't confirm if this is due to tourism.
+![Northern countries]("North.jpg")
+![Southern countries]("south.jpg")
