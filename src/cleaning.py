@@ -8,13 +8,6 @@ def drop_duplicates(df):
     df.dropna(how = 'all', inplace = True)
     return df
 
-def year_1946(df): 
-    df = df [df["Year"] >= 1946]
-    df['Year'] = df['Year'].astype('str') 
-    df['Year'] = df['Year'].map(lambda x: x.rstrip('.0'))
-    df['Year'] = df['Year'].astype('int')
-    return df
-
 def clean_country(df):
     df.dropna(subset = ['Country'], inplace=True)
     df['Country'] = df['Country'].apply(lambda x: x.lower())

@@ -1,6 +1,6 @@
+import re
 def concat_month(df_concat):
-    import re
-    
+   
     df_concat['month'] = df_concat['Date'].apply(lambda x: re.search(r'-(\w+)-', x).group(1) if re.search(r'-(\w+)-', x) else "month_not_found")
     df_concat.month.replace({'Ap':'Apr','July': 'Jul'}, inplace =True )
     df_concat= df_concat[df_concat.month !='month_not_found'] 
